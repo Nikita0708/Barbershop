@@ -66,12 +66,17 @@ a {
   letter-spacing: 0.05em;
 }
 .btn {
+  min-width: 160px;
+  height: 40px;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  border: 1px solid var(--accent-color);
+  background-color: transparent;
+  border-radius: 25px;
 }
 .bottom-text {
   font-size: 18px;
@@ -84,7 +89,23 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
+.header-logo {
+  margin-right: 70px;
+}
+.header-connect {
+  margin-left: auto;
+}
+.header-item:not(:last-child) {
+  margin-right: 40px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+}
 .header-link,
 .header-tel {
   color: #ffffff;
@@ -101,14 +122,21 @@ a {
 }
 .header-btn {
   color: var(--main-btn-color);
+  margin-left: 40px;
 }
 /*---------------HERO--------------------------- */
+.hero .container {
+  display: flex;
+}
 .hero-link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
+}
+.hero-list {
+  width: 90px;
 }
 .hero-link:hover,
 .hero-link:focus {
@@ -117,6 +145,7 @@ a {
 .hero-content {
   background-color: #303030;
   padding: 272px 96px 206px 96px;
+  flex-grow: 1;
 }
 .hero-top-text {
   color: rgba(157, 164, 189, 0.6);
@@ -141,7 +170,16 @@ a {
   padding-top: 164px;
   padding-bottom: 88px;
 }
-
+.about .container {
+  display: flex;
+}
+.about-list {
+  display: flex;
+  margin-right: 64px;
+}
+.about-item:first-child {
+  margin-right: 30px;
+}
 .about-top-text {
   color: #303030;
   margin-bottom: var(--typical-margin);
@@ -171,6 +209,13 @@ a {
   padding-top: 130px;
   padding-bottom: 130px;
 }
+.prices-wrap {
+  display: flex;
+}
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+}
 .prices-top-text {
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: var(--typical-margin);
@@ -181,6 +226,7 @@ a {
 }
 .prices-list {
   padding: 30px 40px;
+  flex-grow: 1;
 }
 .prices-item:not(:last-child) {
   margin-bottom: var(--typical-margin);
@@ -193,7 +239,7 @@ a {
 }
 .prices-btn {
   color: var(--main-btn-color);
-  margin: 0, auto;
+  margin: 0 auto;
   display: block;
   margin-top: 50px;
 }
@@ -238,6 +284,10 @@ a {
   padding-top: 130px;
   padding-bottom: 130px;
 }
+.masters-list {
+  display: flex;
+  margin-left: -30px;
+}
 .masters-top-text {
   color: #303030;
   margin-bottom: var(--typical-margin);
@@ -245,6 +295,10 @@ a {
 .masters-title {
   color: var(--second-title-color);
   margin-bottom: 44px;
+}
+.masters-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
 }
 .masters-item-title {
   font-weight: 400;
@@ -270,6 +324,14 @@ a {
 .gallery-top-text {
   color: #303030;
   padding-bottom: 44px;
+}
+.gallery-list {
+  display: flex;
+  margin-left: -30px;
+}
+.gallery-item {
+  flex-basis: calc(100% / 4 - 30);
+  margin-left: 30px;
 }
 /*-------------------------ONLINE---------------*/
 .online {
